@@ -3,7 +3,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
   overflow: hidden;
   background: #87ceeb; 
@@ -11,8 +10,7 @@ body {
   height: 100vh;
   width: 100vw;
 }
-
-
+/* Sun position */
 .sun {
   position: absolute;
   top: 50px;
@@ -24,8 +22,6 @@ body {
   height: 120px;
   animation: rotate-sun 20s linear infinite;
 }
-
-
 .background-container {
   position: absolute;
   bottom: 0;
@@ -34,7 +30,6 @@ body {
   animation: move-bg 15s linear infinite;
   z-index: 2;
 }
-
 .background {
   width: 50%;
 }
@@ -43,8 +38,7 @@ body {
   height: auto;
   display: block;
 }
-
-
+/* Car position */
 .car {
   position: absolute;
   bottom: 40px; 
@@ -53,42 +47,34 @@ body {
   width: 400px; 
   z-index: 3;
 }
-
 .car-body {
   width: 100%;
   display: block;
   position: relative;
 }
-
-
 .wheel {
   position: absolute;
   width: 65px;   
   height: 65px;
   animation: rotate-wheel 1s linear infinite;
 }
-
 .back-wheel {
   bottom: 5px;   
   left: 32px;   
 }
-
 .front-wheel {
   bottom: 5px;
   right: 62px;   
 }
-
-
+/* Animation */
 @keyframes rotate-sun {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
-
 @keyframes rotate-wheel {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
-
 @keyframes move-bg {
   from { transform: translateX(0); }
   to { transform: translateX(-50%); }
