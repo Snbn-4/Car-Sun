@@ -10,7 +10,8 @@ body {
   height: 100vh;
   width: 100vw;
 }
-/* Sun position */
+
+/* Sun */
 .sun {
   position: absolute;
   top: 50px;
@@ -22,6 +23,8 @@ body {
   height: 120px;
   animation: rotate-sun 20s linear infinite;
 }
+
+/* Background */
 .background-container {
   position: absolute;
   bottom: 0;
@@ -38,7 +41,8 @@ body {
   height: auto;
   display: block;
 }
-/* Car position */
+
+/* Car */
 .car {
   position: absolute;
   bottom: 40px; 
@@ -52,6 +56,18 @@ body {
   display: block;
   position: relative;
 }
+
+/* Driver (man) */
+.driver {
+  position: absolute;
+  width: 70px;   /* adjust size */
+  top: -25px;     /* move vertically to fit car seat */
+  left: 155px;    /* move horizontally into driver seat */
+  z-index: 4;     /* stays above car body */
+  transform: rotate(-10deg); /* small tilt for realism */
+}
+
+/* Wheels */
 .wheel {
   position: absolute;
   width: 65px;   
@@ -66,7 +82,8 @@ body {
   bottom: 5px;
   right: 62px;   
 }
-/* Animation */
+
+/* Animations */
 @keyframes rotate-sun {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
